@@ -1,18 +1,18 @@
-#include<stdio.h>
+include<stdio.h>
 
 int main()
 {
-    int productID[10] = {101,102,103,104,105,106,107,108,109,110};
+    int productID[10] = {101,104,105,106,107,108,109,110};
 
     char brand[10][20] = {
         "Nike","Adidas","Puma","Levis","Zara",
-        "HM","Roadster","USPolo","Wrangler","AllenSolly"
+        "HM","Roadster","USPolo",
     };
 
     int price[10] = {500,1200,800,1000,1500,
-                     1800,600,2500,2200,2000};
+                     1800,600,2500,};
 
-    int stock[10] = {20,15,10,12,18,
+    int stock[10] = {20,12,18,
                      25,30,8,14,16};
 
     int cart[10] = {0};
@@ -95,5 +95,5 @@ int main()
     printf("\nTotal Amount = Rs.%d", total);
     printf("\nThank You For Shopping!\n");
 
-    return 0;
+    return 0;]]=
 }
