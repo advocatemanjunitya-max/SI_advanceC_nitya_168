@@ -2,20 +2,20 @@ include<stdio.h>
 
 int main()
 {
-    int productID[10] = {101,104,105,106,107,108,109,110};
+    int productID[8] = {101,104,105,106,107,108,109,110};
 
-    char brand[10][20] = {
+    char brand[8][20] = {
         "Nike","Adidas","Puma","Levis","Zara",
         "HM","Roadster","USPolo",
     };
 
-    int price[10] = {500,1200,800,1000,1500,
+    int price[8] = {500,1200,800,1000,1500,
                      1800,600,2500,};
 
-    int stock[10] = {20,12,18,
+    int stock[8] = {20,12,18,
                      25,30,8,14,16};
 
-    int cart[10] = {0};
+    int cart[8] = {0};
 
     int id, qty, i, total = 0, found;
 
@@ -24,7 +24,7 @@ int main()
         printf("\n===== RELIANCE TRENDS INVENTORY =====\n");
         printf("ID  Brand        Price   Stock\n");
 
-        for(i = 0; i < 10; i++)
+        for(i = 0; i < 8; i++)
         {
             printf("%d  %s  %d  %d\n",
                    productID[i], brand[i], price[i], stock[i]);
@@ -38,7 +38,7 @@ int main()
 
         found = 0;
 
-        for(i = 0; i < 10; i++)
+        for(i = 0; i <8; i++)
         {
             if(id == productID[i])
             {
@@ -75,7 +75,7 @@ int main()
     printf("\n\n========== E-RECEIPT ==========\n");
     printf("ID  Brand        Qty  Amount\n");
 
-    for(i = 0; i < 10; i++)
+    for(i = 0; i <8; i++)
     {
         if(cart[i] > 0)
         {
@@ -95,5 +95,5 @@ int main()
     printf("\nTotal Amount = Rs.%d", total);
     printf("\nThank You For Shopping!\n");
 
-    return 0;]]=
+    return 0;
 }

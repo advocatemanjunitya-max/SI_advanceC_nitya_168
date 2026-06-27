@@ -7,7 +7,6 @@ int sum(int n)
     else
         return n + sum(n - 1);
 }
-
 int main()
 {
     int num, result;

@@ -1,16 +1,23 @@
 #include <stdio.h>
 struct Product
 {
+
     int productID;
     char brand[20];
     int price;
     int stock;
     int cart;
+
 };
+
 int main()
+
 {
+
 struct Product products[10] =
+
 {
+
 {101, "puma",     500, 20, 0},
 {104, "Adidas",  1200, 12, 0},
 {105, "mango",    800, 18, 0},
@@ -21,22 +28,29 @@ struct Product products[10] =
 {110, "USPolo",  2500, 8,  0},
 {111, "nike",    3000, 14, 0},
 {112, "biba",    1500, 16, 0}
+
 };
 
 int id, qty, i, total = 0, found;
 
 do
+
 {
+
 printf("\n===== RELIANCE TRENDS INVENTORY =====\n");
 printf("ID\tBrand\t\tPrice\tStock\n");
+
 for(i = 0; i < 10; i++)
+
 {
     printf("%d\t%-10s\t%d\t%d\n",
+
     products[i].productID,
     products[i].brand,
     products[i].price,
     products[i].stock);
     }
+
 printf("\nEnter Product ID (0 for Bill): ");
 scanf("%d", &id);
 
@@ -45,6 +59,7 @@ if(id == 0)
 found = 0;
 for(i = 0; i < 10; i++)
 {
+
 if(id == products[i].productID)
 {
     found = 1;
@@ -53,11 +68,14 @@ printf("Selected Brand: %s\n", products[i].brand);
 printf("Available Stock: %d\n", products[i].stock);
 printf("Enter Quantity: ");
 scanf("%d", &qty);
+
 if(qty <= products[i].stock)
 {
 products[i].cart += qty;
 products[i].stock -= qty;
+
 printf("Added to Cart Successfully!\n");
+
 }
 else
 {
